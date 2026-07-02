@@ -1,0 +1,289 @@
+@import "tailwindcss";
+
+/* ═══════════════════════════════════════════════
+   Mona Fashion Boutique — Design System Tokens
+   ═══════════════════════════════════════════════ */
+
+/* ─── Brand Colour Palette ─────────────────────── */
+:root {
+  /* Primary brand colours */
+  --brand-primary: #8B5E3C;
+  --brand-accent: #D4AF37;
+  --brand-background: #F8F5F2;
+  --brand-surface: #FFFFFF;
+  --brand-text: #2B2B2B;
+  --brand-border: #E8E2DB;
+
+  /* Legacy brand aliases (backward compatible) */
+  --brand-rose: #8B5E3C;
+  --brand-rose-light: #b8926e;
+  --brand-gold: #D4AF37;
+  --brand-gold-light: #e8d48b;
+  --brand-cream: #F8F5F2;
+  --brand-charcoal: #2B2B2B;
+  --brand-warm-white: #F8F5F2;
+  --brand-blush: #f0e5db;
+  --brand-sage: #a8b5a0;
+  --brand-off-white: #f0ebe5;
+}
+
+/* ─── Semantic Colour Tokens ───────────────────── */
+:root {
+  --color-primary: var(--brand-primary);
+  --color-secondary: #6b4a2e;
+  --color-accent: var(--brand-accent);
+  --color-background: var(--brand-background);
+  --color-surface: var(--brand-surface);
+  --color-text: var(--brand-text);
+  --color-muted: #8a7f74;
+  --color-border: var(--brand-border);
+  --color-success: #2d6a4f;
+  --color-warning: #b8860b;
+  --color-danger: #c0392b;
+}
+
+/* ─── Typography Scale ─────────────────────────── */
+:root {
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+
+  --leading-tight: 1.15;
+  --leading-snug: 1.3;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.625;
+}
+
+/* ─── Spacing Scale ────────────────────────────── */
+:root {
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+}
+
+/* ─── Border Radius ────────────────────────────── */
+:root {
+  --radius-sm: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-full: 9999px;
+}
+
+/* ─── Shadow Tokens ────────────────────────────── */
+:root {
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.04);
+  --shadow-md: 0 4px 12px -2px rgb(0 0 0 / 0.06);
+  --shadow-lg: 0 10px 30px -8px rgb(0 0 0 / 0.08);
+  --shadow-xl: 0 20px 50px -12px rgb(0 0 0 / 0.12);
+  --shadow-elevated: 0 12px 40px -8px rgb(0 0 0 / 0.1);
+}
+
+/* ═══════════════════════════════════════════════
+   Tailwind v4 Theme Extension
+   ═══════════════════════════════════════════════ */
+
+@theme inline {
+  /* Semantic colours (preferred — use these in new components) */
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-accent: var(--color-accent);
+  --color-background: var(--color-background);
+  --color-surface: var(--color-surface);
+  --color-text: var(--color-text);
+  --color-muted: var(--color-muted);
+  --color-border: var(--color-border);
+  --color-success: var(--color-success);
+  --color-warning: var(--color-warning);
+  --color-danger: var(--color-danger);
+
+  /* Legacy brand colour aliases (backward compatible) */
+  --color-brand-rose: var(--brand-rose);
+  --color-brand-rose-light: var(--brand-rose-light);
+  --color-brand-gold: var(--brand-gold);
+  --color-brand-gold-light: var(--brand-gold-light);
+  --color-brand-cream: var(--brand-cream);
+  --color-brand-charcoal: var(--brand-charcoal);
+  --color-brand-warm-white: var(--brand-warm-white);
+  --color-brand-blush: var(--brand-blush);
+  --color-brand-sage: var(--brand-sage);
+  --color-brand-off-white: var(--brand-off-white);
+
+  /* Typography */
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --text-xs: var(--text-xs);
+  --text-sm: var(--text-sm);
+  --text-base: var(--text-base);
+  --text-lg: var(--text-lg);
+  --text-xl: var(--text-xl);
+  --text-2xl: var(--text-2xl);
+  --text-3xl: var(--text-3xl);
+  --text-4xl: var(--text-4xl);
+  --text-5xl: var(--text-5xl);
+  --text-6xl: var(--text-6xl);
+
+  /* Spacing */
+  --spacing-1: var(--space-1);
+  --spacing-2: var(--space-2);
+  --spacing-3: var(--space-3);
+  --spacing-4: var(--space-4);
+  --spacing-5: var(--space-5);
+  --spacing-6: var(--space-6);
+  --spacing-8: var(--space-8);
+  --spacing-10: var(--space-10);
+  --spacing-12: var(--space-12);
+  --spacing-16: var(--space-16);
+  --spacing-20: var(--space-20);
+  --spacing-24: var(--space-24);
+
+  /* Border radius */
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --radius-xl: var(--radius-xl);
+  --radius-2xl: var(--radius-2xl);
+  --radius-full: var(--radius-full);
+
+  /* Shadows */
+  --shadow-sm: var(--shadow-sm);
+  --shadow-md: var(--shadow-md);
+  --shadow-lg: var(--shadow-lg);
+  --shadow-xl: var(--shadow-xl);
+  --shadow-elevated: var(--shadow-elevated);
+}
+
+/* ═══════════════════════════════════════════════
+   Base Styles
+   ═══════════════════════════════════════════════ */
+
+body {
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ═══════════════════════════════════════════════
+   CSS Animation Utilities
+   ═══════════════════════════════════════════════ */
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-down {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ─── Transition utilities ────────────────────── */
+.crossfade-enter {
+  opacity: 0;
+}
+.crossfade-enter-active {
+  opacity: 1;
+  transition: opacity 0.7s ease-in-out;
+}
+.crossfade-exit {
+  opacity: 1;
+}
+.crossfade-exit-active {
+  opacity: 0;
+  transition: opacity 0.7s ease-in-out;
+}
+
+/* Utility classes (use sparingly — prefer Tailwind's arbitrary values) */
+.animate-fade-up {
+  animation: fade-up 0.6s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out forwards;
+}
+
+.animate-fade-in-down {
+  animation: fade-in-down 0.4s ease-out forwards;
+}
+
+/* Stagger delay helpers */
+.delay-100 {
+  animation-delay: 100ms;
+}
+.delay-200 {
+  animation-delay: 200ms;
+}
+.delay-300 {
+  animation-delay: 300ms;
+}
+.delay-400 {
+  animation-delay: 400ms;
+}
+.delay-500 {
+  animation-delay: 500ms;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up,
+  .animate-fade-in,
+  .animate-fade-in-down {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+/* ─── Dark mode overrides ──────────────────────── */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: #f0ebe5;
+    --color-background: #1a1816;
+    --color-surface: #252220;
+    --color-border: #3a3530;
+    --color-muted: #a09888;
+    --brand-charcoal: #f0ebe5;
+    --brand-warm-white: #1a1816;
+    --brand-cream: #252220;
+    --brand-off-white: #2d2a26;
+    --brand-blush: #2a2420;
+  }
+}

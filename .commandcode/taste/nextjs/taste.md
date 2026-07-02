@@ -1,0 +1,20 @@
+# nextjs
+- When scaffolding Next.js projects, use TypeScript and the App Router with src/ directory structure. Confidence: 0.50
+- When scaffolding Next.js projects, use the `@/*` import alias with Tailwind CSS and ESLint. Confidence: 0.50
+- When scaffolding Next.js projects, use npm (not pnpm, yarn, or bun). Confidence: 0.50
+- When scaffolding Next.js projects, avoid Turbopack. Confidence: 0.50
+- Never wipe or recreate an existing project; use the existing project as the foundation and build upon it. Confidence: 0.80
+- Keep all business data/content in separate data files instead of hardcoding in components. Confidence: 0.80
+- Use Server Components by default; only use Client Components when React hooks or browser APIs are necessary. Confidence: 0.75
+- Only install essential dependencies; avoid unnecessary libraries like framer-motion when CSS animations suffice. Confidence: 0.75
+- Do not modify next.config.ts unless actually required for the task. Confidence: 0.70
+- Follow Mobile First development approach. Confidence: 0.75
+- Use TODO placeholders instead of fake sample data in config files. Confidence: 0.70
+- Add descriptive comments to config files explaining what each section is for. Confidence: 0.70
+- Use neutral descriptive placeholders (e.g., "Announcement message") instead of fake marketing content in data files. Confidence: 0.65
+- Add ARIA labels to all interactive elements including navigation links, utility buttons, and social icon links. Confidence: 0.65
+- Add keyboard focus-visible styles (focus-visible:ring) to all interactive elements including navigation links. Confidence: 0.65
+- Use project type interfaces from src/types for data file exports instead of inline types. Confidence: 0.65
+- Never import React in data files (e.g., hero.ts, products.ts). Confidence: 0.65
+- Add documentation comments (JSDoc-style) to every exported object in data files. Confidence: 0.65
+- Centralize application route strings in src/constants/routes.ts and default asset/image paths in src/constants/images.ts. Confidence: 0.60
