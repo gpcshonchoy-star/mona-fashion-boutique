@@ -5,3 +5,4 @@ export { Badge, type BadgeProps, type BadgeVariant } from "./Badge";
 export { Card, type CardProps, type CardPadding } from "./Card";
 export { Divider, type DividerProps } from "./Divider";
 export { ProductCard, type ProductCardProps } from "./ProductCard";
+export { ReviewCard, type ReviewCardProps } from "./ReviewCard";

@@ -56,6 +56,10 @@ export interface Review {
   content: string;
   date: string;
   productId?: string;
+  /** Customer city / location displayed below their name. */
+  location?: string;
+  /** Whether the reviewer is a verified purchaser. */
+  verified?: boolean;
 }
 
 // ─── Gallery ────────────────────────────────────────────────
