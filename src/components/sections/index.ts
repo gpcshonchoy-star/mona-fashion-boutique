@@ -4,3 +4,4 @@ export { BestSellersSection, type BestSellersSectionProps } from "./BestSellersS
 export { WhyChooseUsSection, type WhyChooseUsSectionProps } from "./WhyChooseUsSection";
 export { CustomerReviewsSection, type CustomerReviewsSectionProps } from "./CustomerReviewsSection";
 export { GallerySection, type GallerySectionProps } from "./GallerySection";
+export { NewsletterSection, type NewsletterSectionProps } from "./NewsletterSection";
