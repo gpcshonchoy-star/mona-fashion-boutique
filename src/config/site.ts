@@ -10,11 +10,12 @@
 // ─── Brand identity ─────────────────────────────────────────
 export const siteConfig = {
   brandName: "Mona Fashion Boutique",
-  tagline: "Timeless Elegance, Modern Style",
-  description:
-    "Discover curated fashion collections at Mona Fashion Boutique. Timeless elegance meets modern style for the discerning wardrobe.",
 
-  /**
+tagline: "Elegant Fashion for Every Occasion",
+
+description:
+  "Discover premium boutique collections, stylish outfits, and handcrafted fashion pieces from Mona Fashion Boutique.",
+    /**
    * Base URL — used for metadata, canonical links, OG images, sitemaps.
    * Falls back to localhost during development.
    */
