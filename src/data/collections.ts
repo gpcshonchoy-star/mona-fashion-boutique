@@ -6,17 +6,34 @@ import type { Collection } from "@/types";
  *
  * Each collection links to a filtered shop view. Add collection
  * hero images to `public/images/collections/`.
- *
- * @todo Replace placeholder values with actual collections and
- *   photography. Set `featured: true` on collections that appear
- *   on the home page.
  */
 export const collections: Collection[] = [
   {
-    id: "col-1",
-    name: "TODO: Collection name",
-    slug: "todo-collection-slug",
-    description: "TODO: Collection description",
+    id: "col-elegant-dresses",
+    name: "Elegant Dresses",
+    slug: "elegant-dresses",
+    description:
+      "Beautiful dresses designed for special moments, celebrations, and everyday elegance.",
+    image: "/images/collections/collection-1.jpg",
+    featured: true,
+    productCount: 0,
+  },
+  {
+    id: "col-modern-casual-wear",
+    name: "Modern Casual Wear",
+    slug: "modern-casual-wear",
+    description:
+      "Comfortable and stylish everyday outfits created for modern Australian lifestyles.",
+    image: "/images/collections/collection-1.jpg",
+    featured: true,
+    productCount: 0,
+  },
+  {
+    id: "col-fashion-accessories",
+    name: "Fashion Accessories",
+    slug: "fashion-accessories",
+    description:
+      "Complete your look with carefully selected boutique accessories.",
     image: "/images/collections/collection-1.jpg",
     featured: true,
     productCount: 0,
