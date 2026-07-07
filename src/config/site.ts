@@ -14,7 +14,11 @@ export const siteConfig = {
 tagline: "Elegant Fashion for Every Occasion",
 
 description:
-  "Discover premium boutique collections, stylish outfits, and handcrafted fashion pieces from Mona Fashion Boutique.",
+  "Discover elegant boutique fashion collections, stylish outfits, and timeless pieces designed for modern Australian lifestyles.",
+
+  /** Default currency for product pricing and checkout. */
+  currency: "AUD",
+
     /**
    * Base URL — used for metadata, canonical links, OG images, sitemaps.
    * Falls back to localhost during development.

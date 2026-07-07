@@ -4,12 +4,12 @@
 - When scaffolding Next.js projects, use npm (not pnpm, yarn, or bun). Confidence: 0.50
 - When scaffolding Next.js projects, avoid Turbopack. Confidence: 0.50
 - Never wipe or recreate an existing project; use the existing project as the foundation and build upon it. Confidence: 0.80
-- Keep all business data/content in separate data files instead of hardcoding in components. Confidence: 0.80
+- Keep all business data/content in separate data files instead of hardcoding in components. Confidence: 0.85
 - Use Server Components by default; only use Client Components when React hooks or browser APIs are necessary. Confidence: 0.75
 - Only install essential dependencies; avoid unnecessary libraries like framer-motion when CSS animations suffice. Confidence: 0.75
 - Do not modify next.config.ts unless actually required for the task. Confidence: 0.70
 - Follow Mobile First development approach. Confidence: 0.75
-- Use TODO placeholders instead of fake sample data in config files. Confidence: 0.70
+- Use TODO placeholders instead of fake sample data in config files. Confidence: 0.75
 - Add descriptive comments to config files explaining what each section is for. Confidence: 0.70
 - Use neutral descriptive placeholders (e.g., "Announcement message") instead of fake marketing content in data files. Confidence: 0.65
 - Add ARIA labels to all interactive elements including navigation links, utility buttons, and social icon links. Confidence: 0.65
