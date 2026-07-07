@@ -7,20 +7,28 @@ import { IMAGES } from "@/constants/images";
  * Each slide represents a full-width banner displayed in rotation
  * on the landing page. Add images to `public/images/hero/` and
  * reference them here once they are available.
- *
- * @todo Replace placeholder values with actual content and imagery.
  */
 export const heroSlides: HeroSlide[] = [
   {
     id: "slide-1",
-    title: "TODO: Hero headline",
-    subtitle: "TODO: Hero subtitle",
-    imageAlt: "TODO: Hero image description",
-    ctaText: "TODO: Shop Now",
+    eyebrow: "NEW COLLECTION",
+    title: "Elegant Fashion for Every Occasion",
+    subtitle:
+      "Discover timeless boutique styles crafted for modern Australian lifestyles.",
+    imageAlt:
+      "Elegant fashion collection – Mona Fashion Boutique hero banner",
+    ctaText: "Shop Collection",
     ctaHref: "/shop",
+    secondaryCtaText: "Explore Styles",
+    secondaryCtaHref: "/collections",
     image: IMAGES.HERO.DEFAULT,
     overlay: "rgba(0,0,0,0.3)",
     align: "left",
-    campaignId: "TODO: campaign-id",
+    trustBadges: [
+      { label: "Premium Quality" },
+      { label: "Australian Style" },
+      { label: "Secure Shopping" },
+    ],
+    campaignId: "home-hero-new-collection",
   },
 ];
